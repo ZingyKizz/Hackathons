@@ -1,0 +1,14 @@
+<h2>My Heroes</h2>
+<div id="grid">
+    <div *ngFor="let place of places">
+        <div (click)="clickPlace(place.id)">
+        <div class="product-item">
+            <img src="{{place.image_link}}">
+            <div class="product-list">
+                <h3>{{place.title}}</h3>
+                <a href="" class="button">Подробнее</a>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
